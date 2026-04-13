@@ -16,7 +16,7 @@ Correct alors afficher : "Bravo ! Tu as trouvé en X tentatives."
 
 Répéter jusqu’à ce que l’utilisateur trouve le bon nombre.
 
-[x] Contraintes techniques :
+ Contraintes techniques :
 Utiliser une boucle 
 
 Utiliser un compteur pour afficher le nombre de tentatives

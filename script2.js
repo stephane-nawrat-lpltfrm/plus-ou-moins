@@ -1,22 +1,37 @@
-const num = prompt("Choisissez un chiffre :");
+const startButton = document.querySelector("button");
 
-let randNum = Math.floor(Math.random() * 100) + 1;
+function play() {
+  const targetNumber = Math.floor(Math.random() * 100) + 1;
 
-let attempts = 0;
+  // Cette ligne permet de voir le chiffre gagant dans la console pour tester le jeu
+  console.log(`Solution : ${targetNumber}`);
 
-if (num === randNum) {
-  alert(`Bravo ! Tu as trouvé en ${attempts} tentatives.`);
-  attempts += 1;
-} else if (num < randNum) {
-  alert("Trop petit");
-  attempts += 1;
+  let attempts = 0;
+  let hasWon = false;
 
-  alert(`Le nombre c'etait:  ${randNum}`);
-} else if (num > randNum) {
-  alert("Trop grand");
-  attempts += 1;
+  while (!hasWon) {
+    let input = prompt("Devinez le nombre (entre 1 et 100) :");
 
-  alert(`Le nombre c'etait:  ${randNum}`);
+    if (input === null) {
+      break;
+    }
+
+    let num = Number(input);
+    attempts++;
+
+    if (num === targetNumber) {
+      alert(
+        `Bravo ! Tu as trouvé le nombre ${targetNumber} en ${attempts} coups !`,
+      );
+      hasWon = true;
+    } else if (num < targetNumber) {
+      alert("C'est PLUS !");
+    } else if (num > targetNumber) {
+      alert("C'est MOINS !");
+    } else {
+      alert("Veuillez entrer un nombre valide.");
+    }
+  }
 }
 
-console.log(attempts);
+startButton.addEventListener("click", play);
