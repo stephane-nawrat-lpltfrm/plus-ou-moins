@@ -16,12 +16,15 @@ Correct alors afficher : "Bravo ! Tu as trouvé en X tentatives."
 
 Répéter jusqu’à ce que l’utilisateur trouve le bon nombre.
 
-Contraintes techniques :
+[x] Contraintes techniques :
 Utiliser une boucle 
 
 Utiliser un compteur pour afficher le nombre de tentatives
 
 Vérifier que l’entrée est bien un nombre valide 
+
+---
+
 Bonus (facultatifs mais fun à faire !) :
 Bonus 1 : Rejouer
 À la fin du jeu, proposer : "Souhaites-tu rejouer ? (oui/non)"
