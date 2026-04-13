@@ -6,29 +6,39 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #2c3e50;
-  color: #ecf0f1;
+  background-color: #2e2e2e; /* Gris foncé */
+  color: #d1d1d1; /* Texte en blanc cassé pour le corps */
+  font-family: "Menlo", "Monaco", "Courier New", monospace;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.container {
   text-align: center;
 }
 
-.game-container {
-  background-color: #34495e;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
 h1 {
-  margin-bottom: 1rem;
-  color: #e67e22;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
 }
 
 p {
-  line-height: 1.6;
-  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Le bouton : Rectangle blanc cassé, texte noir */
+button {
+  background-color: #f5f5f5; /* Blanc cassé */
+  color: #000000; /* Texte noir */
+  border: none;
+  padding: 15px 30px;
+  font-family: "Menlo", monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  /* On garde des angles droits pour le style brut */
 }
